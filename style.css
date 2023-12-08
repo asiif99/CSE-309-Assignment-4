@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body {
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+h1 {
+  background: #37416c;
+  font-size: 1.60rem;
+  text-align: center;
+  padding: 15px 0;
+  color: #d2afaf;
+}
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+.weather-input {
+  width: 550px;
+}
+.weather-input input {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: #fff;
+  height: 46px;
+  width: 100%;
+  outline: none;
+  font-size: 1.07rem;
+  padding: 0 17px;
+  margin: 10px 0 20px 0;
+  border-radius: 4px;
+
+}
+.weather-input input:focus {
+  padding: 0 16px;
+  border: 2px solid #0b0d13;
+}
+.weather-input .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #5a0c0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-input .separator::before{
+  content: "or";
+  color: #000;
+  font-size: 1.1rem;
+  padding: 0 15px;
+  margin-top: -4px;
+  background: #546977;
+}
+.weather-input button {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff;
+  background: #3c456b;
+  transition: 0.2s ease;
+  cursor: pointer;
+  
+}
+.weather-input .search-btn:hover {
+  background: #1b6bba;
+}
+.weather-input .location-btn {
+  background:  #3c456b;
+}
+.weather-input .location-btn:hover {
+  background: #1b6bba;
+}
+.weather-data {
+  width: 100%;
+}
+.weather-data .current-weather {
+  color: #fff;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  border-radius: 5px;
+  padding: 20px 60px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.weather-data h6 {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.current-weather .icon {
+  text-align: center;
+}
+.current-weather .icon img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+.current-weather .icon h6 {
+  margin-top: -10px;
+  text-transform: capitalize;
+}
+.days-forecast h2 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.days-forecast .weather-cards {
+  display: flex;
+  gap: 20px;
+}
+.weather-cards .card {
+  color: #fff;
+  padding: 18px 16px;
+  list-style: none;
+  width: calc(100% / 5);
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  border-radius: 5px;
+}
+.weather-cards .card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.weather-cards .card img {
+  max-width: 70px;
+  margin: 5px 0 -12px 0;
+}
